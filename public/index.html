@@ -157,110 +157,192 @@ body {font-size:18px;}
 <!-- W3.CSS Container -->
 <div class="w3-theme-d5 w3-container w3-padding-32 w3-card-2" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" class="w3-hover-opacity" target=”_blank”>w3.css</a>, <a href="https://serpstack.com/" title="Serpstack" class="w3-hover-opacity" target=”_blank”>Serpstack</a>, and <a href="https://console.firebase.google.com/" title="Firebase" target="_blank" class="w3-hover-opacity">Firebase</a></p></div>
 
+
+<!-- Notes Modal -->
+
+<div id="notesModal" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+    <header class="w3-container w3-theme"> 
+      <span onclick="document.getElementById('notesModal').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2>Create a Note</h2>
+    </header>
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+      <div class="w3-content" style="max-width:700px">
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Title" required name="noteTitle"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Notes" required name="noteBody"></p>
+        </form>
+      </div>
+    </div>
+    <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+      <div class="w3-container w3-right">
+      <button class="w3-button w3-theme" type="submit">Save</button>
+      <button onclick="document.getElementById('notesModal').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End of Notes Modal -->
+
+<!-- Reminders Modal -->
+
+<div id="remindersModal" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+    <header class="w3-container w3-theme"> 
+      <span onclick="document.getElementById('remindersModal').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2>Set a Reminder</h2>
+    </header>
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+      <div class="w3-content" style="max-width:700px">
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Agenda" required name="noteTitle"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="reminderDate" value="2021-02-10T22:00"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Description" required name="reminderBody"></p>
+        </form>
+      </div>
+    </div>
+    <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+      <div class="w3-container w3-right">
+      <button class="w3-button w3-theme" type="submit">Save</button>
+      <button onclick="document.getElementById('remindersModal').style.display='none';" type="button" class="w3-button w3-red">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End of Reminders Modal -->
+
 <script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
 
-function showSearchResult(id) {
-  var x = document.getElementById(id);
-
-  if (x.className.indexOf("w3-show") == -1) {
-      x.className = x.className.replace(" w3-hide", " w3-show");
-  } 
-}
-
-function accord(id) {
+  function showSearchResult(id) {
     var x = document.getElementById(id);
 
     if (x.className.indexOf("w3-show") == -1) {
         x.className = x.className.replace(" w3-hide", " w3-show");
-    } else { 
-        x.className = x.className.replace(" w3-show", " w3-hide");
+    } 
+  }
+
+  function accord(id) {
+      var x = document.getElementById(id);
+
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className = x.className.replace(" w3-hide", " w3-show");
+      } else { 
+          x.className = x.className.replace(" w3-show", " w3-hide");
+      }
+  }
+
+  // Get the input field
+  var input = document.getElementById("searchBox");
+
+  // Execute a function when the user releases a key on the keyboard
+  input.addEventListener("keyup", function(event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      showSearchResult('searchResultsDiv');
     }
-}
-
-// Get the input field
-var input = document.getElementById("searchBox");
-
-// Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    showSearchResult('searchResultsDiv');
-  }
-});
+  });
 
 
-$("#searchQueryForm").submit(function (e) {
-  e.preventDefault()
+  $("#searchQueryForm").submit(function (e) {
+    e.preventDefault()
 
-  var query = $("#searchBox").val()
+    var query = $("#searchBox").val()
 
-  const MY_API_KEY = 'b0c81877dfc55f21f628d6f8dc308ce7'
+    const MY_API_KEY = 'b0c81877dfc55f21f628d6f8dc308ce7'
 
-  if (query === "/remind") {
-    // $('#\\#myModal').modal('show');
-    alert("remind activated");
-  } else if (query === "/note") {
-    // $('#\\#myModal').modal('show');
-    alert("note activated");
-  } else {
-    var url = 'http://api.serpstack.com/search?access_key=' + MY_API_KEY + '&type=web&query=' + query
+    if (query === "/remind") {
+      $('#remindersModal').css("display","block");
+    } else if (query === "/note") {
+      $('#notesModal').css("display","block");
+    } else {
+      var url = 'http://api.serpstack.com/search?access_key=' + MY_API_KEY + '&type=web&query=' + query
 
-    let result = ''
+      let result = ''
 
-    console.log(url)
+      console.log(url)
 
-    $("#searchResultsDiv").empty();
-    $("#searchResultsDiv").append(`
-      <h1 class="w3-xxxlarge" id="searchTitle"><b>Search results for</b>:&nbsp;<b class="w3-text-theme">${query}</b></h1><hr>
-      <div class="w3-animate-zoom" id="spinnerDiv">
-        <p class="w3-text-theme w3-center"><i class="fa fa-spinner w3-spin" style="font-size:64px"></i></p>
-      </div>
-    `);
-
-    $.get(url, function (data) {
-      console.log(data)
-
-      $("#spinnerDiv").remove();
-
+      $("#searchResultsDiv").empty();
       $("#searchResultsDiv").append(`
-        <p id="searchInfo"><b>Showing ${Object.keys(data.organic_results).length} entries out of ${data.search_information.total_results} results.</b></p>
-        <div class="w3-container"><ul class="w3-ul" id="searchResultList"></ul></div>
-        
-      `)
+        <h1 class="w3-xxxlarge" id="searchTitle"><b>Search results for</b>:&nbsp;<b class="w3-text-theme">${query}</b></h1><hr>
+        <div class="w3-animate-zoom" id="spinnerDiv">
+          <p class="w3-text-theme w3-center"><i class="fa fa-spinner w3-spin" style="font-size:64px"></i></p>
+        </div>
+      `);
 
-      data.organic_results.forEach(res => {
+      $.get(url, function (data) {
+        console.log(data)
 
-        result = `
-        <li class="w3-bar w3-animate-left">
-          <div class="w3-bar-item">
-            <h3 class="w3-text-theme"><b><a href="${res.url}" target=”_blank”>${res.title}</a></b></h3>
-            <span class="w3-large w3-text-theme"><a href="${res.url}" target=”_blank”>${res.displayed_url}</a></span>
-            <p>${res.snippet}</p>
-          </div>
-        </li>
-        `
+        $("#spinnerDiv").remove();
 
-        $("#searchResultList").append(result)
+        $("#searchResultsDiv").append(`
+          <p id="searchInfo"><b>Showing ${Object.keys(data.organic_results).length} entries out of ${data.search_information.total_results} results.</b></p>
+          <div class="w3-container"><ul class="w3-ul" id="searchResultList"></ul></div>
+          
+        `)
+
+        data.organic_results.forEach(res => {
+
+          result = `
+          <li class="w3-bar w3-animate-left">
+            <div class="w3-bar-item">
+              <h3 class="w3-text-theme"><b><a href="${res.url}" target=”_blank”>${res.title}</a></b></h3>
+              <span class="w3-large w3-text-theme"><a href="${res.url}" target=”_blank”>${res.displayed_url}</a></span>
+              <p>${res.snippet}</p>
+            </div>
+          </li>
+          `
+
+          $("#searchResultList").append(result)
+        })
+
       })
+    }
 
-    })
-  }
-
-})
+  })
 </script>
 
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBehndpVpmpPPVomOwg67HZItaYTpOH2r8",
+    authDomain: "anpyon-test.firebaseapp.com",
+    databaseURL: "https://anpyon-test-default-rtdb.firebaseio.com",
+    projectId: "anpyon-test",
+    storageBucket: "anpyon-test.appspot.com",
+    messagingSenderId: "387057869891",
+    appId: "1:387057869891:web:86cdced1b64d3f9e2fa0f6",
+    measurementId: "G-B69VRGTLJ7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
