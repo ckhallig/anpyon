@@ -2,10 +2,15 @@
 
 Anpyon - Virtual Assistant Exam
 
-User can search, create note by entering "/note", and set reminder by entering "/remind"
+This is created using VSCode, w3.css, Serpstack, and Firebase (not really)
 
-This is created using VSCode, w3.css, Serpstack, and Firebase
+To start clone the repo, go to the directory, and enter in terminal: "nodemon app.js" then go to http://localhost:3000/ of your browser
 
-To start, enter in terminal: "C:\<directory>\anpyon>nodemon app.js"
+You can interact with it by:
+- searching anything on the searchbox
+- typing /remind to set reminders (WIP)
+- typing /note to create note (WIP)
 
-It ain't much but it's honest work~
+There's still work to be done like the CRUD of the reminders and the notes, as well as the notification for the user.
+
+Still, thank you for your time checking this web app :)
