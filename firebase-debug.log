@@ -1,0 +1,135 @@
+[debug] [2021-02-09T22:01:47.563Z] ----------------------------------------------------------------------
+[debug] [2021-02-09T22:01:47.564Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\challig\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-09T22:01:47.565Z] CLI Version:   9.3.0
+[debug] [2021-02-09T22:01:47.565Z] Platform:      win32
+[debug] [2021-02-09T22:01:47.565Z] Node Version:  v12.13.1
+[debug] [2021-02-09T22:01:47.568Z] Time:          Wed Feb 10 2021 06:01:47 GMT+0800 (China Standard Time)
+[debug] [2021-02-09T22:01:47.568Z] ----------------------------------------------------------------------
+[debug] [2021-02-09T22:01:47.568Z] 
+[debug] [2021-02-09T22:01:47.575Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-09T22:01:47.576Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\challig\Documents\anpyon
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-02-09T22:02:06.269Z] > refreshing access token with scopes: []
+[debug] [2021-02-09T22:02:06.270Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-09T22:02:07.702Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Tue, 09 Feb 2021 22:02:07 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-09T22:02:07.717Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-02-09T22:02:08.966Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-02-09T22:02:08.967Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project anpyon-test (anpyon-test) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-02-09T22:16:54.532Z] ----------------------------------------------------------------------
+[debug] [2021-02-09T22:16:54.534Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\challig\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting:github
+[debug] [2021-02-09T22:16:54.534Z] CLI Version:   9.3.0
+[debug] [2021-02-09T22:16:54.534Z] Platform:      win32
+[debug] [2021-02-09T22:16:54.534Z] Node Version:  v12.13.1
+[debug] [2021-02-09T22:16:54.537Z] Time:          Wed Feb 10 2021 06:16:54 GMT+0800 (China Standard Time)
+[debug] [2021-02-09T22:16:54.537Z] ----------------------------------------------------------------------
+[debug] [2021-02-09T22:16:54.537Z] 
+[debug] [2021-02-09T22:16:54.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-09T22:16:54.546Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\challig\Documents\anpyon
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-02-09T22:16:59.241Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-02-09T22:17:00.508Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-02-09T22:17:00.509Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project anpyon-test (anpyon-test) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\challig\Documents\anpyon 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=483890576&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-02-09T22:17:03.261Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"3ea8b96d6ca01b385d87","redirect_uri":"http://localhost:9005","state":"483890576"}
+[debug] [2021-02-09T22:17:04.322Z] <<< HTTP RESPONSE 200 {"date":"Tue, 09 Feb 2021 22:17:04 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"e21d8ec9145f84d99edbb27d8ac9b69b\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"D682:5870:1B06A0E:21C41B2:602309DF"}
+[debug] [2021-02-09T22:17:04.323Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-02-09T22:17:05.394Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-02-09T22:17:05.395Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ckhallig","id":13329348,"node_id":"MDQ6VXNlcjEzMzI5MzQ4","avatar_url":"https://avatars.githubusercontent.com/u/13329348?v=4","gravatar_id":"","url":"https://api.github.com/users/ckhallig","html_url":"https://github.com/ckhallig","followers_url":"https://api.github.com/users/ckhallig/followers","following_url":"https://api.github.com/users/ckhallig/following{/other_user}","gists_url":"https://api.github.com/users/ckhallig/gists{/gist_id}","starred_url":"https://api.github.com/users/ckhallig/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ckhallig/subscriptions","organizations_url":"https://api.github.com/users/ckhallig/orgs","repos_url":"https://api.github.com/users/ckhallig/repos","events_url":"https://api.github.com/users/ckhallig/events{/privacy}","received_events_url":"https://api.github.com/users/ckhallig/received_events","type":"User","site_admin":false,"name":"Charles Kenneth E. Hallig","company":null,"blog":"","location":"Philippines","email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":1,"created_at":"2015-07-14T08:19:41Z","updated_at":"2021-02-09T21:32:17Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":2738,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as ckhallig 
+[info] 
+[debug] [2021-02-09T22:17:19.269Z] >>> [apiv2][query] GET https://api.github.com/repos/ckhallig/anpyon/actions/secrets/public-key type=owner
+[debug] [2021-02-09T22:17:20.207Z] <<< [apiv2][status] GET https://api.github.com/repos/ckhallig/anpyon/actions/secrets/public-key 200
+[debug] [2021-02-09T22:17:20.208Z] <<< [apiv2][body] GET https://api.github.com/repos/ckhallig/anpyon/actions/secrets/public-key {"key_id":"568250167242549743","key":"7f44YBL9liMZFFkdqNQsUUc8eAoSQghb1KsDdwf7mRU="}
+[debug] [2021-02-09T22:17:20.216Z] >>> [apiv2][query] GET https://api.github.com/repos/ckhallig/anpyon [none]
+[debug] [2021-02-09T22:17:21.000Z] <<< [apiv2][status] GET https://api.github.com/repos/ckhallig/anpyon 200
+[debug] [2021-02-09T22:17:21.000Z] <<< [apiv2][body] GET https://api.github.com/repos/ckhallig/anpyon {"id":337543079,"node_id":"MDEwOlJlcG9zaXRvcnkzMzc1NDMwNzk=","name":"anpyon","full_name":"ckhallig/anpyon","private":false,"owner":{"login":"ckhallig","id":13329348,"node_id":"MDQ6VXNlcjEzMzI5MzQ4","avatar_url":"https://avatars.githubusercontent.com/u/13329348?v=4","gravatar_id":"","url":"https://api.github.com/users/ckhallig","html_url":"https://github.com/ckhallig","followers_url":"https://api.github.com/users/ckhallig/followers","following_url":"https://api.github.com/users/ckhallig/following{/other_user}","gists_url":"https://api.github.com/users/ckhallig/gists{/gist_id}","starred_url":"https://api.github.com/users/ckhallig/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ckhallig/subscriptions","organizations_url":"https://api.github.com/users/ckhallig/orgs","repos_url":"https://api.github.com/users/ckhallig/repos","events_url":"https://api.github.com/users/ckhallig/events{/privacy}","received_events_url":"https://api.github.com/users/ckhallig/received_events","type":"User","site_admin":false},"html_url":"https://github.com/ckhallig/anpyon","description":"Use our virtual assistant to search the web, set you a reminder or save notes.","fork":false,"url":"https://api.github.com/repos/ckhallig/anpyon","forks_url":"https://api.github.com/repos/ckhallig/anpyon/forks","keys_url":"https://api.github.com/repos/ckhallig/anpyon/keys{/key_id}","collaborators_url":"https://api.github.com/repos/ckhallig/anpyon/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/ckhallig/anpyon/teams","hooks_url":"https://api.github.com/repos/ckhallig/anpyon/hooks","issue_events_url":"https://api.github.com/repos/ckhallig/anpyon/issues/events{/number}","events_url":"https://api.github.com/repos/ckhallig/anpyon/events","assignees_url":"https://api.github.com/repos/ckhallig/anpyon/assignees{/user}","branches_url":"https://api.github.com/repos/ckhallig/anpyon/branches{/branch}","tags_url":"https://api.github.com/repos/ckhallig/anpyon/tags","blobs_url":"https://api.github.com/repos/ckhallig/anpyon/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/ckhallig/anpyon/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/ckhallig/anpyon/git/refs{/sha}","trees_url":"https://api.github.com/repos/ckhallig/anpyon/git/trees{/sha}","statuses_url":"https://api.github.com/repos/ckhallig/anpyon/statuses/{sha}","languages_url":"https://api.github.com/repos/ckhallig/anpyon/languages","stargazers_url":"https://api.github.com/repos/ckhallig/anpyon/stargazers","contributors_url":"https://api.github.com/repos/ckhallig/anpyon/contributors","subscribers_url":"https://api.github.com/repos/ckhallig/anpyon/subscribers","subscription_url":"https://api.github.com/repos/ckhallig/anpyon/subscription","commits_url":"https://api.github.com/repos/ckhallig/anpyon/commits{/sha}","git_commits_url":"https://api.github.com/repos/ckhallig/anpyon/git/commits{/sha}","comments_url":"https://api.github.com/repos/ckhallig/anpyon/comments{/number}","issue_comment_url":"https://api.github.com/repos/ckhallig/anpyon/issues/comments{/number}","contents_url":"https://api.github.com/repos/ckhallig/anpyon/contents/{+path}","compare_url":"https://api.github.com/repos/ckhallig/anpyon/compare/{base}...{head}","merges_url":"https://api.github.com/repos/ckhallig/anpyon/merges","archive_url":"https://api.github.com/repos/ckhallig/anpyon/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/ckhallig/anpyon/downloads","issues_url":"https://api.github.com/repos/ckhallig/anpyon/issues{/number}","pulls_url":"https://api.github.com/repos/ckhallig/anpyon/pulls{/number}","milestones_url":"https://api.github.com/repos/ckhallig/anpyon/milestones{/number}","notifications_url":"https://api.github.com/repos/ckhallig/anpyon/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/ckhallig/anpyon/labels{/name}","releases_url":"https://api.github.com/repos/ckhallig/anpyon/releases{/id}","deployments_url":"https://api.github.com/repos/ckhallig/anpyon/deployments","created_at":"2021-02-09T21:37:10Z","updated_at":"2021-02-09T21:45:32Z","pushed_at":"2021-02-09T21:42:58Z","git_url":"git://github.com/ckhallig/anpyon.git","ssh_url":"git@github.com:ckhallig/anpyon.git","clone_url":"https://github.com/ckhallig/anpyon.git","svn_url":"https://github.com/ckhallig/anpyon","homepage":"","size":0,"stargazers_count":0,"watchers_count":0,"language":"HTML","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-02-09T22:17:21.003Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-09T22:17:21.003Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-09T22:17:22.120Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 09 Feb 2021 22:17:21 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-09T22:17:22.137Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/anpyon-test/serviceAccounts  
+ {"accountId":"github-action-337543079","serviceAccount":{"displayName":"GitHub Actions (ckhallig/anpyon)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository ckhallig/anpyon"}}
+[debug] [2021-02-09T22:17:23.971Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 09 Feb 2021 22:17:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-09T22:17:23.971Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Service account github-action-337543079 already exists within project projects/anpyon-test.","status":"ALREADY_EXISTS","details":[{"@type":"type.googleapis.com/google.rpc.ResourceInfo","resourceName":"projects/anpyon-test/serviceAccounts/github-action-337543079@anpyon-test.iam.gserviceaccount.com"}]}}
+[debug] [2021-02-09T22:17:23.979Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/anpyon-test/serviceAccounts/github-action-337543079@anpyon-test.iam.gserviceaccount.com  
+ 
+[debug] [2021-02-09T22:17:23.981Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/anpyon-test:getIamPolicy  
+ 
+[debug] [2021-02-09T22:17:25.509Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 09 Feb 2021 22:17:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-09T22:17:25.748Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 09 Feb 2021 22:17:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=676","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-09T22:17:25.749Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/anpyon-test:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwW67mCPqSU=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-5clxm@anpyon-test.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-337543079@anpyon-test.iam.gserviceaccount.com"]},{"role":"roles/firebasedatabase.admin","members":["serviceAccount:firebase-adminsdk-5clxm@anpyon-test.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-337543079@anpyon-test.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-387057869891@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-5clxm@anpyon-test.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:charles.hallig@gmail.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-337543079@anpyon-test.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-337543079@anpyon-test.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2021-02-09T22:17:27.700Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 09 Feb 2021 22:17:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1112","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-09T22:17:27.702Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/anpyon-test/serviceAccounts/github-action-337543079@anpyon-test.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2021-02-09T22:17:29.208Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 09 Feb 2021 22:17:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-337543079 with Firebase Hosting admin permissions. 
+[debug] [2021-02-09T22:17:29.232Z] >>> [apiv2][query] PUT https://api.github.com/repos/ckhallig/anpyon/actions/secrets/FIREBASE_SERVICE_ACCOUNT_ANPYON_TEST [none]
+[debug] [2021-02-09T22:17:29.232Z] >>> [apiv2][body] PUT https://api.github.com/repos/ckhallig/anpyon/actions/secrets/FIREBASE_SERVICE_ACCOUNT_ANPYON_TEST {"encrypted_value":"U+hSwvGOeucvpe3YyxWQI5nSAnYidVnz746hLYQgeG9gf7eg11ITc0VNy0l4RlrEaK/1xGe0dClWxtNX51GzPjDOAlPOtbGG6zaY5EttNFWVXGKOmUJ23EZBemw4zt1v6/QK6LVNtHsEeuI861AnBA8kR056jv1WBABY9OKVRzCtyUz/dYy9+hfnNXw4Uyk78knGWE43UsC5FMh0/9OJ7wg+8NGH72Fj176XIpppjV2WsflcmlHlLamJ6chsMWvd2AR11WYDT0O2UA965lJRswFztQyBI6WEC2+3/+jTNyiUJiDlMp7z2HIy8Ctje9pCpeO2ZjnjSKaOw642CphO9lnLK3BOc3aZ8hcxcgjC9psftE+P7775U8yBtC9kONz/TmY0KbSdD4o7zkuRIjjX96eK3K7YNJINxhFMohtj79zZF/yEbKaNDJyVG2XLd7MF4DT8rDw29iLYfv6Uc8wELOFJrjGLyk2InvTQdLSnWV4S+1ISvkyzAZh95+vKyxWxci4gO3257ugTY7TvX245SW8Bs8XQbuxmWc73YCwYZ5HxRr8uRl71cL1a9CbFY/BGdF/EX4LRX0fbIvZh9L2Gf2CWyasTMQO0gI3C8b6zMrcrNB7hXDHEkSJdISnAOp/BdlOOHViKVK+KAFSN/EoxXRbzUEGD8XF4M2dHY2U4QW1MnfouJXdbhh0ZXVhlqi9fZgISpnb7xMPBkZbqeG9p1G10BGKFG9C5EirhiS7GWu+zfZ6dn2/CjItQwCcdL59QyWkY8pBpcgQhMw8C5mRQutvA8UUdwtql5EsG/MnXM6ox/4bB1eHL30i3Y5SO6uVuvFJQMaB+joaSepeYSKpdj/hCvu1CQaEXuFZZW2LXvyandw/EGATzczDEQ77m3VtGIU5nwGJ3uLqWQG8LoIWqqWUfu6EGSxaPgsFxDYspUJaW8pSo0EysxYHxb1lv7jKq02BPAs9b6sH8yWqiDe/gQKeXS0mFRTRGnKvUQWwYyuJE4/uwUGzpwP9RoI3H50aoyGTVQH/m+b34eFcDJUTQCY9q04aLjhDZ6SdhFUJywm/GxgNLzK5zoT5tLlEKEisH5VstuNzjo+awE3SO2jvyZm3ejwUd9nW9XGEFNUIQjbMIbbUAUcUJh1HQMeBaZ8TLSDfzU6KFrQMOT3uPT2D0hYhPMf6MPkBDOnkU0HtEcNjtC1g4RQWLO43LB0E/43b8Gijq5ed3I3UIxiXzF2x6PPa+X73p4h0rGg8a9v5V0952f9Krp7xgM8tHB18z3evnZCDwENlBIcf4kzhKlPUj1thAv865+rB5Fck8qMghcq299HfVnEmfDXDm+DIpyMEysJwrGozRp2siCRTxDBOGpu/f348PNWl8KryUDAphkI5gA1/H1lKDjRt2ck0xLXbPxs/icirj729PNOVcuKs22ZtXgrjF5t8uZVQDeXUuCLrgssFGk7L4q9lFn55DroWGYbttP49HyT/G1VY1Fv8f6IBPmiCTUJlcfI5X9jG7IszhOV1qj0jrBmNVj/GRZQaDnVSSLcIr6jrL13k13GkI/2Vk69HH+EBsLn+1E7aT0Dy/5w1se2p2VzaGbLKp3U/f4QgIgLPCUnN6nv0dhstiaUH3P1SabS24FkDDtnElnNr2ndBHTxG0a4ixdre2gP/6qtvfb5cf2n3ixLR9zRBVhDImSX2uUBrdvEWlSyAVFJ0XIwddu/scrH89CyanSHJSnwt2n41cRyvRpXZc/IoBain0e+zaKX1QL3IJfdXQW8JwGB7PsnBPFswbmK1+pWsBUXdx3EGqfkYtezSolWpvprtZ8z4RGbW5SWXbh1rPccBr6SFvtQNNatDGHXTc7JdNOvYDVeGPgCA7IfPxZaDxb1rKFAGVfXtjUAcmGiW8mIQ8mRrfPCZM5CgNUsxYAEV6RwmhY4C74M5dxb6KZmMVdW5fvF2YwmBMbi4QZTqlsYk26mI4Vj/jcu78gppfpE0vkvi5jsNgXP47r4V8moHzupW7J6yvT5R0X6x1UKsKb52fAvTP5MsAHjoZBEYK+PrLtATh1oswT9m8B9Nq19Q2QieX61oMj3+JKZoH21DYkuBv3uTgVJ8zQ43XgLf/Kv5HOXnd+OAiMs5h3NVZYzOPxxDYa6p59fg+9XgIZe0oeBvFoaXgeU6vLqZdIehbpbMj9C9G2cwZ+LnOUh1qTjEcz2O3rJHNGQRarvsZHldyG6pe8Mn3oOzCxkjSlRNieP94y63msoKYXLBMlUllcpkLfn2zR/pD/P5snduw6KJzXZpRQrW56nO4gD5wQdISwSa2Be3UxzuZfETWBGjZ8Z2UKyrfKZ1Vfj+1LcnJ6ioPieZfaZwzHza1aHKBxfMBDVsURz23yojBSZ5JAjmupRCJPmTI/gcMD9Ot3D8XhLW/cbjbbVgKVG3p6P4oTQhIGE0V8P/mi+sFDL/NuV4nNM9eztz0jsNXukh3+qDYFix7d4w/Ab8pHgT0tWsGQ5wkjRHqX/k2TvOSmpJlgJ0Envty67X0Qm5K8ojBoYPhApfIUH0A+jERtR8h9BVK3yhGSk293utVEQcYrQlicA+x3Ca6mZx0hc2UMqC0eNbu7d/4FHmyUQ9lOLVMyN9s6V7jVPwWC20Kr9G/NKoa/0f25b4vF9IK7tHiyq6Tb3BDkww3wzShuhQUIXqtOpd5reGBEQnctske3FtSGId015MBcqoLsgfGmEgljeJOu3HtoUXliZUptvoue8+iolsN1ENooLRxA08cXN8BdS+q7fQmpRVwr2Q4Q7Y5w4Hdj6ggD8aExfBrmnanFczv1jd2n3xdinFaLivtd90y6mvNQAnFRl3Ow+5291vhQptmseV7Ml/Yo+yUZkZ58C0+5Cn0A8d5OCU0hkmM7KNcbmt2IEgchgmuG/zDVn6cJz2OOsOiqZcZEwJlVXBms4R28On84ZoTntODHZ1YNNbyo05AlnhyZdZPwUD/MCDsfLuIeqD2c4pk+aTkyQtbKhXVqvKsMu/XVk7WBPRvAoHWCJmF7X994cCOVKXeRMYgpB6haUD+agjNoSUcF/NrpPqGGrvo6O24xRvUDbgy56abWx72oBy/i6psHnsKnYXBOYz4nfVGMMuOt00wnsN7k6AMsGbFGclMVjjco9pxFLb/mn9i7QCmirQDsAV7X7iyCfrL/E/+23Jr","key_id":"568250167242549743"}
+[debug] [2021-02-09T22:17:30.093Z] <<< [apiv2][status] PUT https://api.github.com/repos/ckhallig/anpyon/actions/secrets/FIREBASE_SERVICE_ACCOUNT_ANPYON_TEST 204
+[debug] [2021-02-09T22:17:30.093Z] <<< [apiv2][body] PUT https://api.github.com/repos/ckhallig/anpyon/actions/secrets/FIREBASE_SERVICE_ACCOUNT_ANPYON_TEST undefined
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_ANPYON_TEST. 
+[info] i  You can manage your secrets at https://github.com/ckhallig/anpyon/settings/secrets. 
+[info] 
+[debug] [2021-02-09T22:17:31.150Z] TypeError: Cannot read property 'predeploy' of undefined
+    at Object.initGitHub [as hosting:github] (C:\Users\challig\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\github.js:65:30)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async init (C:\Users\challig\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: An unexpected error has occurred.
