@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:18px;}
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-theme w3-collapse w3-top w3-large w3-padding w3-card-4" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h1 class="w3-padding-64"><b>anpyon</b></h1>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#searchBox" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#reminders" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reminders</a> 
+    <a href="#notes" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Notes</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-theme w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-theme w3-margin-right" onclick="w3_open()">☰</a>
+  <span>anpyon</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:100px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <div class="w3-row">
+      <h1 class="w3-xxlarge">
+        
+          
+            <form id="searchQueryForm">
+              <div class="w3-col" style="width:85%">
+                <p><b><input class="w3-input w3-border w3-center" type="text" name="searchBox" id="searchBox" placeholder="Search anything or use either /remind or /note commands." required autofocus></b></p>
+              </div>
+              <div class="w3-rest">
+                <p><b><button type="submit" class="w3-button w3-theme w3-border w3-center w3-block" onclick="showSearchResult('searchResultsDiv')" id="letsGo"><i class="fa fa-search"></i></button></b></p>
+              </div>
+            </form>
+          
+          
+      
+      </h1>
+    </div>
+    
+  </div>
+
+  <!-- Search Results -->
+  <div class="w3-container w3-hide w3-animate-left" id="searchResultsDiv" style="margin-top:25px">
+        
+  </div>
+  
+  <!-- Reminders -->
+  <div class="w3-container w3-animate-left" id="reminders" style="margin-top:25px">
+    <h1 class="w3-xxlarge w3-text-theme"><b>Reminders.</b></h1>
+    <hr>
+    <p id="remindersMessage"><b>Here are some of the reminders you've set:</b></p>
+    <ul class="w3-ul w3-hoverable">
+      <li class="w3-bar">
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-trash-o"></i></span>
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-pencil"></i></span>
+        <div class="w3-bar-item">
+          <span class="w3-large w3-text-theme">[CMP] Refinement Meeting Estimation</span><br>
+          <span>Mon 08/02/2021 at 2:00 PM</span>
+        </div>
+      </li>
+
+      <li class="w3-bar">
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-trash-o"></i></span>
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-pencil"></i></span>
+        <div class="w3-bar-item">
+          <span class="w3-large w3-text-theme">[CMP-QA] Technical Meeting</span><br>
+          <span>Mon 08/02/2021 at 3:00 PM</span>
+        </div>
+      </li>
+
+      <li class="w3-bar">
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-trash-o"></i></span>
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-pencil"></i></span>
+        <div class="w3-bar-item">
+          <span class="w3-large w3-text-theme">Jan 2021 B Staging Demo</span><br>
+          <span>Mon 08/02/2021 at 6:00 PM</span>
+        </div>
+      </li>
+
+    </ul>
+    
+  </div>
+  
+  <!-- Notes -->
+  <div class="w3-container w3-animate-left" id="notes" style="margin-top:25px">
+    <h1 class="w3-xxlarge w3-text-theme"><b>Notes.</b></h1>
+    <hr >
+    <p id="notesMessage"><b>Take a look at the notes you've saved:</b></p>
+
+    <ul class="w3-ul w3-hoverable">
+      <li class="w3-bar">
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-trash-o"></i></span>
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-pencil"></i></span>
+        <div class="w3-bar-item">
+          <span class="w3-large w3-text-theme">Website Creation</span><br>
+          <span>Last modified: 08/02/2021 - 2:00 PM</span>
+        </div>
+      </li>
+
+      <li class="w3-bar">
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-trash-o"></i></span>
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-pencil"></i></span>
+        <div class="w3-bar-item">
+          <span class="w3-large w3-text-theme">XPATH</span><br>
+          <span>Last modified: 08/02/2021 - 3:00 PM</span>
+        </div>
+      </li>
+
+      <li class="w3-bar">
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-trash-o"></i></span>
+        <span onclick="" class="w3-bar-item w3-button w3-hover-theme w3-xlarge w3-right"><i class="fa fa-pencil"></i></span>
+        <div class="w3-bar-item">
+          <span class="w3-large w3-text-theme">JQuery</span><br>
+          <span>Last modified: 08/02/2021 - 6:00 PM</span>
+        </div>
+      </li>
+
+    </ul>
+    
+  </div>
+
+  <div class="w3-container w3-animate-left" id="about" style="margin-top:25px">
+    <h1 class="w3-xxlarge w3-text-theme"><b>About.</b></h1>
+    <hr>
+    <p class="w3-tooltip"><b>Made with 
+      <span class="w3-text w3-tag">luha at pighati</span> <i class="fa fa-heart-o"></i>
+      by Charles.</b>
+    </p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-theme-d5 w3-container w3-padding-32 w3-card-2" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" class="w3-hover-opacity" target=”_blank”>w3.css</a>, <a href="https://serpstack.com/" title="Serpstack" class="w3-hover-opacity" target=”_blank”>Serpstack</a>, and <a href="https://console.firebase.google.com/" title="Firebase" target="_blank" class="w3-hover-opacity">Firebase</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function showSearchResult(id) {
+  var x = document.getElementById(id);
+
+  if (x.className.indexOf("w3-show") == -1) {
+      x.className = x.className.replace(" w3-hide", " w3-show");
+  } 
+}
+
+function accord(id) {
+    var x = document.getElementById(id);
+
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className = x.className.replace(" w3-hide", " w3-show");
+    } else { 
+        x.className = x.className.replace(" w3-show", " w3-hide");
+    }
+}
+
+// Get the input field
+var input = document.getElementById("searchBox");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    showSearchResult('searchResultsDiv');
+  }
+});
+
+
+$("#searchQueryForm").submit(function (e) {
+  e.preventDefault()
+
+  var query = $("#searchBox").val()
+
+  const MY_API_KEY = 'b0c81877dfc55f21f628d6f8dc308ce7'
+
+  if (query === "/remind") {
+    // $('#\\#myModal').modal('show');
+    alert("remind activated");
+  } else if (query === "/note") {
+    // $('#\\#myModal').modal('show');
+    alert("note activated");
+  } else {
+    var url = 'http://api.serpstack.com/search?access_key=' + MY_API_KEY + '&type=web&query=' + query
+
+    let result = ''
+
+    console.log(url)
+
+    $("#searchResultsDiv").empty();
+    $("#searchResultsDiv").append(`
+      <h1 class="w3-xxxlarge" id="searchTitle"><b>Search results for</b>:&nbsp;<b class="w3-text-theme">${query}</b></h1><hr>
+      <div class="w3-animate-zoom" id="spinnerDiv">
+        <p class="w3-text-theme w3-center"><i class="fa fa-spinner w3-spin" style="font-size:64px"></i></p>
+      </div>
+    `);
+
+    $.get(url, function (data) {
+      console.log(data)
+
+      $("#spinnerDiv").remove();
+
+      $("#searchResultsDiv").append(`
+        <p id="searchInfo"><b>Showing ${Object.keys(data.organic_results).length} entries out of ${data.search_information.total_results} results.</b></p>
+        <div class="w3-container"><ul class="w3-ul" id="searchResultList"></ul></div>
+        
+      `)
+
+      data.organic_results.forEach(res => {
+
+        result = `
+        <li class="w3-bar w3-animate-left">
+          <div class="w3-bar-item">
+            <h3 class="w3-text-theme"><b><a href="${res.url}" target=”_blank”>${res.title}</a></b></h3>
+            <span class="w3-large w3-text-theme"><a href="${res.url}" target=”_blank”>${res.displayed_url}</a></span>
+            <p>${res.snippet}</p>
+          </div>
+        </li>
+        `
+
+        $("#searchResultList").append(result)
+      })
+
+    })
+  }
+
+})
+</script>
+
+</body>
+</html>
